@@ -9,6 +9,7 @@ import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
 
+
 const help = require('./images/help.svg');
 
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
@@ -148,7 +149,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   </li>
                 ) : null}
 
-                {tweetText !== '' ? (
+                {/* {tweetText !== '' ? (
                   <li>
                     <a
                       href={'https://twitter.com/intent/tweet?&text=' + tweetText}
@@ -161,7 +162,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 ) : null}
                 {tweetText !== '' || githubUrl !== '' ? (
                   <li className="divider hiddenMobile"></li>
-                ) : null}
+                ) : null} */}
                 {config.header.social ? (
                   <li className={'hiddenMobile'}>
                     <ul
